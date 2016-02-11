@@ -12,7 +12,7 @@ namespace WpfApplication2.Model
         // Comentar si ProxyCreationEnabled = true
         public Pedido()
         {
-            Lineas = new Collection<LineaPedido>();
+          //  Lineas = new Collection<LineaPedido>();
         }
         public virtual int PedidoId { get; set; }
         public virtual DateTime FechaCreacion { get; set; }

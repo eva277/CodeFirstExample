@@ -23,3 +23,33 @@ D:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\
 J:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\bin\Debug\WpfApplication2.exe.config
 J:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.exe
 J:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.pdb
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\bin\Debug\WpfApplication2.exe.config
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.exe
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.pdb
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.csprojResolveAssemblyReference.cache
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\obj\Debug\App.g.cs
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2_MarkupCompile.cache
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\bin\Debug\WpfApplication2.exe
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\bin\Debug\WpfApplication2.pdb
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\bin\Debug\EntityFramework.dll
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\bin\Debug\EntityFramework.SqlServer.dll
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\bin\Debug\EntityFramework.xml
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\bin\Debug\EntityFramework.SqlServer.xml
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\obj\Debug\MainWindow.g.cs
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2_MarkupCompile.lref
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\obj\Debug\MainWindow.baml
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.g.resources
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.Migrations.AddCampos.resources
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.Properties.Resources.resources
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.csproj.GenerateResource.Cache
+F:\DAM\unidad 4\practicas\Ejemplo Orm CodeFirst\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.Migrations.nueva.resources
+C:\Users\dam215\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\bin\Debug\WpfApplication2.exe.config
+C:\Users\dam215\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.exe
+C:\Users\dam215\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.pdb
+C:\Users\dam215\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.csprojResolveAssemblyReference.cache
+C:\Users\dam215\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\MainWindow.g.cs
+C:\Users\dam215\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\App.g.cs
+C:\Users\dam215\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2_MarkupCompile.cache
+C:\Users\dam215\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2_MarkupCompile.lref
+C:\Users\dam215\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\MainWindow.baml
+C:\Users\dam215\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.g.resources

@@ -12,7 +12,9 @@ namespace WpfApplication2.DAL
             : base(context)
         {
         }
-
+        public Cliente getClienteConPedidos(int cliId) {
+            return dbSet.Include("Pedidos").Where(c=>c.ClienteId== cliId).FirstOrDefault();
+        }
         public IEnumerable<Cliente> GetFiltrado(String buscado)
         {
             if (!string.IsNullOrWhiteSpace(buscado))
@@ -38,12 +40,9 @@ namespace WpfApplication2.DAL
         }
         public virtual void Delete(int idCliente)
         {
-            //Cliente cliente = (from Cliente c in context.Clientes.
-            //                   Include("Pedido")
-            //                   where c.ClienteId == idCliente
-            //                   select c).Single();
+           
             Cliente  cliente= context.Clientes.Include("Pedido").Where(c=>c.ClienteId == idCliente).Single();
-            //                   
+                             
 
             Delete(cliente);
         }

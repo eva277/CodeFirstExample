@@ -5,19 +5,57 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525" DataContext="{Binding Model.Cliente}">
-    <Grid>
-        <Label x:Name="label" Content="Id" HorizontalAlignment="Left" Margin="37,28,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label1" Content="Nombre" HorizontalAlignment="Left" Margin="37,59,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label2" Content="Direccion" HorizontalAlignment="Left" Margin="37,90,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label3" Content="Mail" HorizontalAlignment="Left" Margin="37,129,0,0" VerticalAlignment="Top"/>
+        Title="MainWindow" Height="350" Width="800" Loaded="Window_Loaded_1" >
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Validation.ErrorTemplate">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <StackPanel>
+                            <Border BorderThickness="2" BorderBrush="DarkRed">
+                                <StackPanel>
+                                    <AdornedElementPlaceholder    
+                                x:Name="errorControl" />
+                                </StackPanel>
+                            </Border>
+                            <TextBlock Text="{Binding AdornedElement.ToolTip    
+                        , ElementName=errorControl}" Foreground="Red"  Width="300"/>
+                        </StackPanel>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="true">
+                    <Setter Property="BorderBrush" Value="Red" />
+                    <Setter Property="BorderThickness" Value="1" />
+                    <Setter Property="ToolTip"    
+                Value="{Binding RelativeSource={RelativeSource Self}    
+                    , Path=(Validation.Errors)[0].ErrorContent}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+    </Window.Resources>
+
+
+    <Grid Margin="0,0,7,0">
+        <Label x:Name="label" Content="Id" HorizontalAlignment="Left" Margin="32,32,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Nombre" HorizontalAlignment="Left" Margin="32,59,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="Apellidos" HorizontalAlignment="Left" Margin="32,90,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Direccion" HorizontalAlignment="Left" Margin="31,126,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Mail" HorizontalAlignment="Left" Margin="32,200,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="textBoxId" HorizontalAlignment="Left" Height="23" Margin="96,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBoxNombre" HorizontalAlignment="Left" Height="23" Margin="96,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="TextBoxDireccion" HorizontalAlignment="Left" Height="23" Margin="96,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBoxMail" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged   
-            , NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="96,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" ToolTip="Correo"/>
-        <TextBox x:Name="textBoxApellidos" HorizontalAlignment="Left" Height="23" Margin="231,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
-        <Button x:Name="button" Content="Añadir" HorizontalAlignment="Left" Margin="57,205,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <TextBox x:Name="textBoxNombre" Text="{Binding Nombre, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="96,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TextBoxDireccion" HorizontalAlignment="Left" Height="23" Margin="96,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211"/>
+        <TextBox x:Name="textBoxMail" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, ValidatesOnDataErrors=True}"  HorizontalAlignment="Left" Height="23" Margin="96,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="textBoxApellidos" HorizontalAlignment="Left" Height="23" Margin="96,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
+        <Button x:Name="button" Content="Añadir" HorizontalAlignment="Left" Margin="42,247,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Label x:Name="label5" Content="Telefono" HorizontalAlignment="Left" Margin="32,163,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TexBoxTfno" Text="{Binding Movil, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"  HorizontalAlignment="Left" Height="23" Margin="96,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <Button x:Name="buttonModificar" Content="Modificar" HorizontalAlignment="Left" Margin="122,247,0,0" VerticalAlignment="Top" Width="75" Click="buttonModificar_Click"/>
+        <Button x:Name="buttonEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="202,247,0,0" VerticalAlignment="Top" Width="75" Click="buttonEliminar_Click"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="414,90,0,0" VerticalAlignment="Top" Height="142" Width="325"/>
+        <Button x:Name="buttonVer" Content="Ver Pedidos" HorizontalAlignment="Left" Margin="290,247,0,0" VerticalAlignment="Top" Width="75" Click="buttonVer_Click"/>
 
     </Grid>
 </Window>

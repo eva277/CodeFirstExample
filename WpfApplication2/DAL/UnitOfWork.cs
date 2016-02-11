@@ -9,8 +9,8 @@ namespace  WpfApplication2.DAL
         private TiendaContext context = new TiendaContext();
         private bool disposed = false;
 
+        private RepositorioPedido repositorioPedido;
         private RepositorioCliente repositorioCliente;
-       
 
         public RepositorioCliente RepositorioCliente
         {
@@ -25,7 +25,19 @@ namespace  WpfApplication2.DAL
                 return repositorioCliente;
             }
         }
-        
+        public RepositorioPedido RepositorioPedido
+        {
+            get
+            {
+                if (this.repositorioPedido == null)
+                {
+                    this.repositorioPedido =
+                        new RepositorioPedido(context);
+                }
+
+                return repositorioPedido;
+            }
+        }
         public void Save()
         {
             context.SaveChanges();

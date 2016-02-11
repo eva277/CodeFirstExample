@@ -10,6 +10,7 @@ using WpfApplication2.DAL;
 
 namespace WpfApplication2.Model
 {
+
     [PropertyChanged.ImplementPropertyChanged]
     public class Cliente: PropertyValidateModel 
     {
@@ -20,26 +21,27 @@ namespace WpfApplication2.Model
         }
         public  int ClienteId { get; set; }
         [Required]
+        [StringLength(12, ErrorMessage = "Maximo 12 car.")]
         public  string Nombre { get; set; }
         [Required]
-        [StringLength(30, MinimumLength = 5)]
+        [StringLength(30)]
         public  string  Apellidos { get; set; }
         [Display(Name = "Nombre Completo")]
         public string nombreCompleto
         {
             get { return Nombre + " " + Apellidos; }
         }
-        public virtual string Direccion { get; set; }
+        public  string Direccion { get; set; }
        
         [StringLength(12, MinimumLength = 9)]
         [Phone]
         [Display(Name = "Móbil")]
         [DataType(DataType.PhoneNumber,
-            ErrorMessage = "O número de teléfono non é válido")]
+            ErrorMessage = "Telefono incorrecto")]
         public string Movil { get; set; }
 
-        [Required(ErrorMessage = "Email address is required")]
-        [EmailAddress(ErrorMessage = "Email Address is Invalid")]
+        [Required(ErrorMessage = "Correo obligatorio")]
+        [EmailAddress(ErrorMessage = "El correo  es invalido")]
         public string Email   { get; set; } 
         public virtual ICollection<Pedido> Pedidos { get; set; }
     }

@@ -12,7 +12,7 @@ namespace WpfApplication2.DAL
     {
         public TiendaContext()
             : base("TiendaEntities")
-        { }
+        { this.Configuration.LazyLoadingEnabled = false; }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Producto> Productos { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }
